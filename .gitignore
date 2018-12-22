@@ -1,0 +1,9 @@
+data/*
+models/*
+env/
+.idea
+results/*
+.ipynb_checkpoints
+*.ipynb
+*.pyc
+__pycache__
