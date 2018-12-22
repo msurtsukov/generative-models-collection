@@ -62,7 +62,7 @@ Learning rate of 0.0001 and 2 generator steps per discriminator step provided be
 ## LSGAN
 [Least Squares Generative Adversarial Networks](https://arxiv.org/abs/1611.04076)
 
-$a = -1, b = 1, c = 0$
+a = -1, b = 1, c = 0
 
 Learning rate of 0.0001 and 2 generator steps per discriminator step.
 
@@ -80,7 +80,7 @@ Learning rate of 0.0001 and 5 discriminator steps per generator step.
 ## WGANGP
 [Improved Training of Wasserstein GANs](https://arxiv.org/abs/1704.00028)
 
-$\lambda = 10$
+lambda = 10
 
 Learning rate of 0.0001 and 5 discriminator steps per generator step.
 
@@ -89,7 +89,7 @@ Learning rate of 0.0001 and 5 discriminator steps per generator step.
 ## InfoGAN
 [InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets](https://arxiv.org/abs/1606.03657)
 
-$\lambda = 1$
+lambda = 1
 
 Learning rate of 0.0001 and 2 generator steps per discriminator step.
 
@@ -103,7 +103,7 @@ Check whether attributes really got their true interpretation.
 ## BEGAN
 [BEGAN: Boundary Equilibrium Generative Adversarial Networks](https://arxiv.org/abs/1703.10717)
 
-$\gamma=0.5, \lambda=0.001$
+gamma=0.5, lambda=0.001
 
 Learning rate of 0.0001 and 2 generator steps per discriminator step.
 
@@ -123,11 +123,11 @@ Learning rate of 0.0001.
 ## VAEGAN
 [Autoencoding beyond pixels using a learned similarity metric](https://arxiv.org/abs/1512.09300)
 
-$\gamma=0.01$
+gamma=0.01
 
 Learning rate of 0.0001 and 2 generator steps per discriminator step.
 
-Generator loss was changed to exploit $log(1-x) \rightarrow -log(x)$ trick. It slightly losses probabilistic interpretation, 
+Generator loss was changed to exploit log(1-x) -> -log(x) trick. It slightly losses probabilistic interpretation, 
 but at least it is able to train this way.
 
 (Epochs count is based on generator steps)
