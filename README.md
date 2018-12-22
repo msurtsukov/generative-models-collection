@@ -103,7 +103,7 @@ Check whether attributes really got their true interpretation.
 ## BEGAN
 [BEGAN: Boundary Equilibrium Generative Adversarial Networks](https://arxiv.org/abs/1703.10717)
 
-gamma=0.5, lambda=0.001
+gamma=0.5, lambda=0.01
 
 Learning rate of 0.0001 and 2 generator steps per discriminator step.
 
