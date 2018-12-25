@@ -44,7 +44,7 @@ python train.py --help
 ```
 
 # Comments on models and results
-All models share architecture of *DCGAN* with slight deviations and were trained using Adam(0.5, 0.999) with batch size of 64 and learning rate of 0.0001.
+All models share architecture of *DCGAN* with slight deviations and were trained using Adam(0.5, 0.999) with batch size is 64 and learning rate is 0.0001.
 
 Most models were not trained long enough.
 
@@ -55,7 +55,7 @@ Epochs count is based on discriminator steps (number of generator steps for Wass
 ## DCGAN
 [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434)
 
-Learning rate of 0.0001 and 2 generator steps per discriminator step provided better results.
+Learning rate is 0.0001 and 2 generator steps per discriminator step provided better results.
 
 <img src="./imgs/dcgan.gif" alt="dcgan" width="900"/>
 
@@ -64,7 +64,7 @@ Learning rate of 0.0001 and 2 generator steps per discriminator step provided be
 
 a = -1, b = 1, c = 0
 
-Learning rate of 0.0001 and 2 generator steps per discriminator step.
+Learning rate is 0.0001 and 2 generator steps per discriminator step.
 
 Had slightly more stable training then DCGAN.
 
@@ -73,7 +73,7 @@ Had slightly more stable training then DCGAN.
 ## WGAN
 [Wasserstein GAN](https://arxiv.org/abs/1701.07875)
 
-Learning rate of 0.0001 and 5 discriminator steps per generator step.
+Learning rate is 0.0001 and 5 discriminator steps per generator step.
 
 <img src="./imgs/wgan.gif" alt="wgan" width="900"/>
 
@@ -82,7 +82,7 @@ Learning rate of 0.0001 and 5 discriminator steps per generator step.
 
 lambda = 10
 
-Learning rate of 0.0001 and 5 discriminator steps per generator step.
+Learning rate is 0.0001 and 5 discriminator steps per generator step.
 
 <img src="./imgs/wgangp.gif" alt="wgangp" width="900"/>
 
@@ -91,7 +91,7 @@ Learning rate of 0.0001 and 5 discriminator steps per generator step.
 
 lambda = 1
 
-Learning rate of 0.0001 and 2 generator steps per discriminator step.
+Learning rate is 0.0001 and 2 generator steps per discriminator step.
 
 In contrast to other models this one was not trained with conditional attributes. Instead they were used as binomial latent variables. Their true distribution was used as prior for fake images attributes, however their real meaning was to be understood by the model.
 
@@ -105,7 +105,7 @@ Check whether attributes really got their true interpretation.
 
 gamma=0.5, lambda=0.01
 
-Learning rate of 0.0001 and 2 generator steps per discriminator step.
+Learning rate is 0.0001 and 2 generator steps per discriminator step.
 
 Skip-connections proposed by the authors of the article were not introduced here. As this would require to heavily modify the nets architectures.
 The model experienced heavy mode-collapsing. Authors suggest to reduce learning rate to avoid it. This was not tried.
@@ -115,7 +115,7 @@ The model experienced heavy mode-collapsing. Authors suggest to reduce learning 
 ## VAE
 [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)
 
-Learning rate of 0.0001.
+Learning rate is 0.0001.
 
 <img src="./imgs/vae.gif" alt="vae" width="900"/>
 
@@ -125,7 +125,7 @@ Learning rate of 0.0001.
 
 gamma=0.01
 
-Learning rate of 0.0001 and 2 generator steps per discriminator step.
+Learning rate is 0.0001 and 2 generator steps per discriminator step.
 
 Generator loss was changed to exploit log(1-x) -> -log(x) trick. It slightly losses probabilistic interpretation, 
 but at least it is able to train this way.
